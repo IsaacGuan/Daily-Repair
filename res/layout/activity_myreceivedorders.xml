@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_light"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <RadioGroup
+        android:id="@+id/rg_myreceivedorders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:checkedButton="@+id/rb_myreceivedall" >
+
+            <RadioButton
+                android:id="@+id/rb_myreceivedall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:paddingBottom="@dimen/space_middle"
+                android:paddingTop="@dimen/space_middle"
+                android:background="@drawable/tab_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="全部"
+                android:textSize="@dimen/text_size_normal" />
+
+            <RadioButton
+                android:id="@+id/rb_myreceivedundergoing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/space_middle"
+                android:paddingTop="@dimen/space_middle"
+                android:background="@drawable/tab_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="进行中"
+                android:textSize="@dimen/text_size_normal" />
+
+            <RadioButton
+                android:id="@+id/rb_myreceivedcompleted"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/space_middle"
+                android:paddingTop="@dimen/space_middle"
+                android:background="@drawable/tab_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="已完成"
+                android:textSize="@dimen/text_size_normal" />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_myreceivedcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rg_myreceivedorders"
+        android:layout_marginTop="@dimen/space_middle"
+        android:orientation="vertical" />
+    
+</RelativeLayout>

@@ -1,0 +1,290 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_light"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <ScrollView
+        android:id="@+id/sv_sendorders"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bt_sendorder" >
+
+        <RelativeLayout
+            android:id="@+id/rl_sendorders"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/rl_sendtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/space_small"
+                android:paddingTop="@dimen/space_small" >
+
+                <EditText
+                    android:id="@+id/et_sendtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/space_middle"
+                    android:layout_marginRight="@dimen/space_middle"
+                    android:layout_toRightOf="@+id/tv_sendtitle"
+                    android:singleLine="true"
+                    android:ems="10"
+                    android:textSize="@dimen/text_size_normal"
+                    android:maxLength="10"
+                    android:hint="活儿名称不超过10个字" >
+
+                    <requestFocus />
+                </EditText>
+
+                <TextView
+                    android:id="@+id/tv_sendtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_middle"
+                    android:text="活儿名称"
+                    android:textSize="@dimen/text_size_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_sendbudget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_sendtitle"
+                android:layout_marginTop="@dimen/space_micro"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/space_small"
+                android:paddingTop="@dimen/space_small" >
+
+                <EditText
+                    android:id="@+id/et_sendbudget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/space_middle"
+                    android:layout_marginRight="@dimen/space_middle"
+                    android:layout_toRightOf="@+id/tv_sendbudget"
+                    android:singleLine="true"
+                    android:ems="10"
+                    android:textSize="@dimen/text_size_normal"
+                    android:maxLength="10"
+                    android:inputType="number"
+                    android:hint="请填写具体金额数，例如：20" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/tv_sendbudget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_middle"
+                    android:text="活儿预算"
+                    android:textSize="@dimen/text_size_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_sendorderate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spinner_height"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/rl_sendbudget"
+                android:layout_marginTop="@dimen/space_middle"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_sendorderdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_middle"
+                    android:text="招标截止日期"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <TextView
+                    android:id="@+id/tv_senddateconfigue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_middle"
+                    android:layout_marginRight="@dimen/space_middle"
+                    android:layout_toRightOf="@+id/tv_sendorderdate"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="点击设置日期"
+                    android:textColor="@color/blue_light"
+                    android:textSize="@dimen/text_size_select" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_senddetail1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/rl_sendorderate"
+                android:layout_marginTop="@dimen/space_middle"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/space_small"
+                android:paddingTop="@dimen/space_small" >
+
+                <TextView
+                    android:id="@+id/tv_senddetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_middle"
+                    android:text="活儿描述"
+                    android:textSize="@dimen/text_size_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_senddetail2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/detail_height"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/rl_senddetail1"
+                android:layout_marginTop="@dimen/space_micro"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/space_small"
+                android:paddingTop="@dimen/space_small" >
+
+                <EditText
+                    android:id="@+id/et_senddetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/space_middle"
+                    android:layout_marginRight="@dimen/space_middle"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="请简要描述维修内容"
+                    android:maxLength="100"
+                    android:inputType="textMultiLine"
+                    android:textSize="@dimen/text_size_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_sendaddress1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_senddetail2"
+                android:layout_marginTop="@dimen/space_middle"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/space_small"
+                android:paddingTop="@dimen/space_small" >
+
+                <TextView
+                    android:id="@+id/tv_sendaddress1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_middle"
+                    android:text="活儿地址"
+                    android:textSize="@dimen/text_size_normal" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/rl_sendaddress2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spinner_height"
+                android:layout_below="@+id/rl_sendaddress1"
+                android:layout_marginTop="@dimen/space_micro"
+                android:background="@color/white"
+                android:orientation="vertical" >
+                
+                <TextView
+                    android:id="@+id/tv_sendaddress2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_middle"
+                    android:text="选择城市区县"
+                    android:textSize="@dimen/text_size_normal" />
+                
+                <TextView
+                    android:id="@+id/tv_sendcity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_middle"
+                    android:layout_marginRight="@dimen/space_middle"
+                    android:layout_toRightOf="@+id/tv_sendaddress2"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="点击选择城市区县"
+                    android:textColor="@color/blue_light"
+                    android:textSize="@dimen/text_size_select" />
+                
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_sendaddress3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_sendaddress2"
+                android:layout_marginTop="@dimen/space_micro"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/space_small"
+                android:paddingTop="@dimen/space_small" >
+                
+                <TextView
+                    android:id="@+id/tv_sendaddressspecific"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_middle"
+                    android:text="具体地址"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <EditText
+                    android:id="@+id/et_sendaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_sendaddressspecific"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/space_middle"
+                    android:layout_marginRight="@dimen/space_middle"
+                    android:singleLine="true"
+                    android:ems="10"
+                    android:maxLength="50"
+                    android:textSize="@dimen/text_size_normal"
+                    android:hint="请正确填写具体地址" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bt_sendorder"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/space_middle"
+        android:background="@color/green_light"
+        android:gravity="center"
+        android:text="发活儿"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_large" />
+
+</RelativeLayout>

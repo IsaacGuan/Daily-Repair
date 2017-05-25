@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="@dimen/space_small"
+        android:paddingTop="@dimen/space_small"
+        android:paddingLeft="@dimen/space_middle"
+        android:paddingRight="@dimen/space_middle" >
+
+        <TextView
+            android:id="@+id/ordertitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="ordertitle"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:id="@+id/orderlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ordertitle"
+            android:layout_alignParentRight="true"
+            android:text="orderlocation"
+            android:textSize="@dimen/text_size_normal" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginTop="@dimen/space_micro"
+        android:paddingBottom="@dimen/space_small"
+        android:paddingTop="@dimen/space_small"
+        android:paddingLeft="@dimen/space_middle"
+        android:paddingRight="@dimen/space_middle" >
+        
+        <TextView 
+            android:id="@+id/orderbudgettitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="活儿预算"
+            android:textSize="@dimen/text_size_normal" />
+        
+        <TextView
+            android:id="@+id/orderdatetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderbudgettitle"
+            android:layout_marginTop="@dimen/space_tiny"
+            android:layout_alignParentLeft="true"
+            android:text="截止日期"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/orderbudget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/orderbudgettitle"
+            android:layout_alignBottom="@+id/orderbudgettitle"
+            android:layout_alignParentRight="true"
+            android:text="orderbudget"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/blue_light" />
+
+        <TextView
+            android:id="@+id/orderdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/orderdatetitle"
+            android:layout_alignBottom="@+id/orderdatetitle"
+            android:layout_alignParentRight="true"
+            android:text="orderdate"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/blue_light" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

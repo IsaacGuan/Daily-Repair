@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cities">
+        <item>上海市</item>
+    </string-array>
+    
+    <string-array name="districts">
+        <item>黄浦区</item>
+        <item>徐汇区</item>
+        <item>长宁区</item>
+        <item>静安区</item>
+        <item>普陀区</item>
+        <item>虹口区</item>
+        <item>杨浦区</item>
+        <item>浦东新区</item>
+        <item>闵行区</item>
+        <item>宝山区</item>
+        <item>嘉定区</item>
+        <item>金山区</item>
+        <item>松江区</item>
+        <item>青浦区</item>
+        <item>奉贤区</item>
+        <item>崇明区</item>
+    </string-array>
+    
+    <string-array name="experts">
+        <item>厨房类</item>
+        <item>家居类</item>
+        <item>个人生活类</item>
+        <item>数码类</item>
+    </string-array>
+    
+</resources>

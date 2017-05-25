@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_light"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <SearchView
+        android:id="@+id/sv_orders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="@dimen/text_size_normal"
+        android:background="@color/white" >
+
+    </SearchView>
+    
+    <RelativeLayout
+        android:id="@+id/rl_orders"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/space_small"
+        android:layout_below="@+id/sv_orders"
+        android:background="@color/white" >
+        
+        <com.gyr.repair.view.XListView
+	        android:id="@+id/lv_orders"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentTop="true" >
+            
+        </com.gyr.repair.view.XListView>
+        
+    </RelativeLayout>
+    
+</RelativeLayout>

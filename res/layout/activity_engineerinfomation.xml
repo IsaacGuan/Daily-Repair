@@ -1,0 +1,206 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_light"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <RelativeLayout
+        android:id="@+id/rl_engineerinfoid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_large"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/space_middle"
+        android:paddingTop="@dimen/space_middle" >
+
+        <TextView
+            android:id="@+id/tv_engineerinfoid1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_middle"
+            android:text="登陆账号"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_engineerinfoid2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_middle"
+            android:text=""
+            android:textSize="@dimen/text_size_normal" />
+
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/tv_announce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_engineerinfoid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/space_middle"
+        android:text="登陆账号不可更改"
+        android:textSize="@dimen/text_size_normal" />
+
+    <RelativeLayout
+        android:id="@+id/rl_engineerinfoexpert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_announce"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/space_middle"
+        android:paddingBottom="@dimen/space_middle"
+        android:paddingTop="@dimen/space_middle" >
+
+        <TextView
+            android:id="@+id/tv_engineerinfoexpert1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_middle"
+            android:text="擅长领域"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_engineerinfoexpert2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_middle"
+            android:text=""
+            android:textSize="@dimen/text_size_normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_engineerinfodistrict"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rl_engineerinfoexpert"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/space_micro"
+        android:paddingBottom="@dimen/space_middle"
+        android:paddingTop="@dimen/space_middle" >
+
+        <TextView
+            android:id="@+id/tv_engineerinfodistrict1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_middle"
+            android:text="服务区域"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_engineerinfodistrict2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_middle"
+            android:textSize="@dimen/text_size_normal" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_engineerinfoordernumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rl_engineerinfodistrict"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/space_micro"
+        android:paddingBottom="@dimen/space_middle"
+        android:paddingTop="@dimen/space_middle" >
+
+        <TextView
+            android:id="@+id/tv_engineerinfoordernumber1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_middle"
+            android:text="接单总数"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_engineerinfoordernumber2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_middle"
+            android:textSize="@dimen/text_size_normal" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_engineerinfoscore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rl_engineerinfoordernumber"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/space_micro"
+        android:paddingBottom="@dimen/space_middle"
+        android:paddingTop="@dimen/space_middle" >
+
+        <TextView
+            android:id="@+id/tv_engineerinfoscore1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_middle"
+            android:text="个人评分"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_engineerinfoscore2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_middle"
+            android:textSize="@dimen/text_size_normal" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_modifyengineerinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rl_engineerinfoscore"
+        android:layout_marginTop="@dimen/space_large"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/space_middle"
+        android:paddingTop="@dimen/space_middle" >
+
+        <TextView
+            android:id="@+id/tv_modifypassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_middle"
+            android:text="修改维修工信息"
+            android:textSize="@dimen/text_size_normal" />
+    </RelativeLayout>
+
+</RelativeLayout>

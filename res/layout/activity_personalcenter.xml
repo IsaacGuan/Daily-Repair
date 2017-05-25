@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_light"
+    tools:context="${relativePackage}.${activityClass}" >
+        
+    <RelativeLayout
+        android:id="@+id/ll_personalhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/space_middle"
+        android:paddingTop="@dimen/space_middle" >
+        
+        <ImageView
+            android:id="@+id/iv_personalhead"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_middle"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_head" />
+
+        <TextView
+            android:id="@+id/tv_personalhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_personalhead"
+            android:layout_marginLeft="@dimen/space_middle"
+            android:text=""
+            android:textSize="@dimen/text_size_large" />
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_personalinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_personalhead"
+        android:layout_marginTop="@dimen/space_large"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/space_middle"
+        android:paddingLeft="@dimen/space_middle"
+        android:paddingTop="@dimen/space_middle" >
+
+        <TextView
+            android:id="@+id/tv_personalinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人资料"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_engineerinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_personalinfo"
+        android:layout_marginTop="@dimen/space_micro"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/space_middle"
+        android:paddingLeft="@dimen/space_middle"
+        android:paddingTop="@dimen/space_middle" >
+
+        <TextView
+            android:id="@+id/tv_engineerinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="维修工资料"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/bt_exit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/space_middle"
+        android:background="@color/green_light"
+        android:gravity="center"
+        android:text="退出登陆"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_large" />
+
+</RelativeLayout>

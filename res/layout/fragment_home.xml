@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_light"
+    android:orientation="vertical" >
+    
+    <com.gyr.repair.view.Kanner
+        android:id="@+id/kanner_ad"
+        android:layout_width="match_parent"
+        android:layout_height="177dp"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/ll_buttonsline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kanner_ad"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/space_large"
+        android:paddingLeft="@dimen/space_small"
+        android:paddingRight="@dimen/space_small"
+        android:paddingTop="@dimen/space_large" >
+
+        <RelativeLayout
+            android:id="@+id/rl_sendorder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/iv_sendorder"
+                android:layout_width="@dimen/homepage_icon_size"
+                android:layout_height="@dimen/homepage_icon_size"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/send_order" />
+
+            <TextView
+                android:id="@+id/tv_sendorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_sendorder"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/space_middle"
+                android:text="发活儿"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_applyengineer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/iv_applyengineer"
+                android:layout_width="@dimen/homepage_icon_size"
+                android:layout_height="@dimen/homepage_icon_size"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/apply_engineer" />
+
+            <TextView
+                android:id="@+id/tv_applyengineer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_applyengineer"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/space_middle"
+                android:text="申请维修工"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/rl_receiveorder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/iv_receiveorder"
+                android:layout_width="@dimen/homepage_icon_size"
+                android:layout_height="@dimen/homepage_icon_size"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/receive_order" />
+
+            <TextView
+                android:id="@+id/tv_receiveorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_receiveorder"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/space_middle"
+                android:text="接活儿"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_engineerlist"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/iv_engineerlist"
+                android:layout_width="@dimen/homepage_icon_size"
+                android:layout_height="@dimen/homepage_icon_size"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/engineer_list" />
+
+            <TextView
+                android:id="@+id/tv_engineerlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_engineerlist"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/space_middle"
+                android:text="维修工列表"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_buttonsline"
+        android:layout_marginTop="@dimen/space_middle"
+        android:paddingTop="@dimen/space_middle"
+        android:paddingBottom="@dimen/space_middle"
+        android:paddingLeft="@dimen/space_middle"
+        android:paddingRight="@dimen/space_middle"
+        android:background="@color/white" >
+        
+        <TextView
+            android:id="@+id/tv_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修修新闻 "
+            android:textStyle="bold|italic"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size_normal" />
+        
+        <View
+            android:id="@+id/line"
+            android:layout_width="@dimen/space_micro"
+            android:layout_height="@dimen/space_large"
+            android:layout_marginLeft="@dimen/space_middle"
+            android:layout_toRightOf="@+id/tv_news"
+            android:gravity="center_vertical"
+            android:background="@color/grey" />
+        
+        <com.gyr.repair.view.MarqueeView
+            android:id="@+id/mv_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_middle"
+            android:layout_toRightOf="@+id/line"
+            android:layout_centerVertical="true"
+            app:mvAnimDuration="1000"
+            app:mvInterval="3000"
+            app:mvTextColor="@color/text_default"
+            app:mvTextSize="@dimen/text_size_small" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_show1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_news"
+        android:layout_marginTop="@dimen/space_middle"
+        android:paddingTop="@dimen/space_middle"
+        android:paddingBottom="@dimen/space_middle"
+        android:paddingLeft="@dimen/space_middle"
+        android:paddingRight="@dimen/space_middle"
+        android:background="@color/white" >
+        
+        <ImageView
+            android:id="@+id/iv_show"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="@dimen/space_small"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:src="@drawable/list"
+            android:tint="@color/text_default" />
+        
+        <TextView
+            android:id="@+id/tv_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_middle"
+            android:layout_toRightOf="@+id/iv_show"
+            android:text="新活儿展示"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size_normal" />
+                
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_show2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_show1"
+        android:layout_marginTop="@dimen/space_micro"
+        android:paddingTop="8dp"
+        android:paddingBottom="@dimen/space_middle"
+        android:paddingLeft="@dimen/space_middle"
+        android:paddingRight="@dimen/space_middle"
+        android:background="@color/white" >
+        
+        <ListView
+            android:id="@+id/lv_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/space_small"
+            android:layout_marginRight="@dimen/space_small"
+            android:divider="@color/white" >
+            
+        </ListView>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

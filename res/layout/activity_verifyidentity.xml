@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_light"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <RelativeLayout
+        android:id="@+id/rl_verifyname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="@dimen/space_small"
+        android:paddingTop="@dimen/space_small"
+        android:background="@color/white"
+        android:orientation="vertical" >        
+        
+        <TextView
+            android:id="@+id/tv_verifyname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_middle"
+            android:text="姓    名"
+            android:textSize="@dimen/text_size_normal" />
+
+        <EditText
+            android:id="@+id/et_verifyname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/space_middle"
+            android:layout_marginRight="@dimen/space_middle"
+            android:layout_toRightOf="@+id/tv_verifyname"
+            android:hint="请与身份证姓名保持一致"
+            android:maxLength="20"
+            android:ems="10"
+            android:textSize="@dimen/text_size_normal" >
+
+            <requestFocus />
+        </EditText>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_verifyid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_micro"
+        android:paddingBottom="@dimen/space_small"
+        android:paddingTop="@dimen/space_small"
+        android:layout_below="@+id/rl_verifyname"
+        android:background="@color/white"
+        android:orientation="vertical" >
+        
+        <TextView
+            android:id="@+id/tv_verifyid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_middle"
+            android:text="身份证"
+            android:textSize="@dimen/text_size_normal" />
+
+        <EditText
+            android:id="@+id/et_verifyid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/space_middle"
+            android:layout_marginRight="@dimen/space_middle"
+            android:layout_toRightOf="@+id/tv_verifyid"
+            android:hint="请输入身份证号"
+            android:maxLength="18"
+            android:ems="10"
+            android:textSize="@dimen/text_size_normal" >
+            
+        </EditText>
+        
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_idfront"
+        android:layout_width="228dp"
+        android:layout_height="145dp"
+        android:layout_below="@+id/rl_verifyid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/space_large"
+        android:src="@drawable/id_front" />
+    
+    <ImageView
+        android:id="@+id/iv_idback"
+        android:layout_width="228dp"
+        android:layout_height="145dp"
+        android:layout_below="@+id/iv_idfront"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/space_large"
+        android:src="@drawable/id_back" />
+    
+    <Button
+        android:id="@+id/bt_verify"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/space_middle"
+        android:background="@color/green_light"
+        android:gravity="center"
+        android:text="提交验证信息"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_large" />
+
+</RelativeLayout>

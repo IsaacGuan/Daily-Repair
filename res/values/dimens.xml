@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="text_size_large">20sp</dimen>
+    <dimen name="text_size_select">16sp</dimen>
+    <dimen name="text_size_normal">15sp</dimen>
+    <dimen name="text_size_small">13sp</dimen>
+    
+    <dimen name="space_huge">45dp</dimen>
+    <dimen name="space_large">20dp</dimen>
+    <dimen name="space_middle">10dp</dimen>
+    <dimen name="space_small">5dp</dimen>
+    <dimen name="space_tiny">2dp</dimen>
+    <dimen name="space_micro">1dp</dimen>
+    
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="spinner_height">48dp</dimen>
+    <dimen name="detail_height">120dp</dimen>
+    <dimen name="top_buttons_height">40dp</dimen>
+    <dimen name="bottom_tap_height">52dp</dimen>
+    
+    <dimen name="homepage_icon_size">40dp</dimen>
+    <dimen name="bottomtab_icon_size">23dp</dimen>
+    
+    <!-- 顶部按钮栏高度 -->
+    <dimen name="pickerview_topbar_height">45dp</dimen>
+    <!-- 顶部按钮paddingLeft -->
+    <dimen name="pickerview_topbar_paddingleft">20dp</dimen>
+    <!-- 顶部按钮paddingRight -->
+    <dimen name="pickerview_topbar_paddingright">30dp</dimen>
+    <!-- 顶部按钮文字大小 -->
+    <dimen name="pickerview_topbar_btn_textsize">20sp</dimen>
+    <dimen name="pickerview_topbar_title_textsize">20sp</dimen>
+    <!-- 选项文字大小 需要配合 bools.xml 的 pickerview_customTextSize 为 true 才有效果-->
+    <dimen name="pickerview_textsize">20sp</dimen>
+
+</resources>

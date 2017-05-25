@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+      <item android:state_checked="true" ><!-- 选中状态 -->
+        <layer-list >
+            <item >
+                <shape android:shape="rectangle">
+                    <stroke android:width="5dp"  android:color="@color/blue_light"/>    
+                </shape>
+            </item>
+            <item  android:bottom="5dp" >
+                <shape android:shape="rectangle" >
+           			 <solid android:color="@color/white"/>
+       			 </shape>
+            </item>
+        </layer-list> 
+    </item>
+    <item ><!-- 默认状态 -->
+        <shape >
+            	<solid  android:color="@color/white"/>
+        </shape>
+    </item>
+</selector>

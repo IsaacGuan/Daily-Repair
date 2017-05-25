@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_light"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <RelativeLayout
+        android:id="@+id/rl_rateengineerinfo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/space_middle"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/space_small"
+        android:paddingTop="@dimen/space_small" >
+
+        <TextView
+            android:id="@+id/tv_rateengineerinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_middle"
+            android:text="维修工信息"
+            android:textSize="@dimen/text_size_normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_rateengineerinfo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_rateengineerinfo1"
+        android:layout_marginTop="@dimen/space_micro"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/space_middle"
+        android:paddingTop="@dimen/space_middle" >
+
+        <TextView
+            android:id="@+id/tv_rateengineername1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/space_middle"
+            android:text="维修工姓名"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/tv_rateengineername2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/space_huge"
+            android:layout_toRightOf="@+id/tv_rateengineername1"
+            android:text="无"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/tv_rateengineermobile1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_rateengineername1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_middle"
+            android:layout_marginTop="@dimen/space_small"
+            android:text="维修工手机"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/tv_rateengineermobile2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_rateengineername2"
+            android:layout_below="@+id/tv_rateengineername1"
+            android:layout_marginTop="@dimen/space_small"
+            android:text="无"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_normal" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_rateengineer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_rateengineerinfo2"
+        android:layout_marginTop="@dimen/space_middle"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/space_small"
+        android:paddingTop="@dimen/space_small" >
+        
+        <TextView
+            android:id="@+id/tv_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_middle"
+            android:text="请评分"
+            android:textSize="@dimen/text_size_normal" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_rateengineer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_rateengineer1"
+        android:layout_marginTop="@dimen/space_micro"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/space_middle"
+        android:paddingTop="@dimen/space_middle" >
+
+        <RatingBar
+            android:id="@+id/rtb_rateengineer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/space_middle"
+            android:rating="3.5"
+            android:numStars="5"
+            android:stepSize="0.5" />
+
+    </RelativeLayout>
+    
+    <Button
+        android:id="@+id/bt_confirmcomplete"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/space_middle"
+        android:background="@color/green_light"
+        android:gravity="center"
+        android:text="确认完成"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_large" />
+    
+</RelativeLayout>

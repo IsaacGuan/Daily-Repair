@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_light"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <ScrollView
+        android:id="@+id/sv_modifyengineer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bt_modifyengineer" >
+
+        <RelativeLayout
+            android:id="@+id/rl_modifyengineer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            
+            <RelativeLayout
+                android:id="@+id/rl_modifyaddress1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/space_middle"
+                android:paddingBottom="@dimen/space_small"
+                android:paddingTop="@dimen/space_small" >
+
+                <TextView
+                    android:id="@+id/tv_modifyaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_middle"
+                    android:text="服务地址"
+                    android:textSize="@dimen/text_size_normal" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/rl_modifyaddress2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spinner_height"
+                android:layout_below="@+id/rl_modifyaddress1"
+                android:layout_marginTop="@dimen/space_micro"
+                android:background="@color/white"
+                android:orientation="vertical" >
+                
+                <TextView
+                    android:id="@+id/tv_modifyaddress2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_middle"
+                    android:text="选择城市区县"
+                    android:textSize="@dimen/text_size_normal" />
+                
+                <TextView
+                    android:id="@+id/tv_modifycity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_middle"
+                    android:layout_marginRight="@dimen/space_middle"
+                    android:layout_toRightOf="@+id/tv_modifyaddress2"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="点击选择城市区县"
+                    android:textColor="@color/blue_light"
+                    android:textSize="@dimen/text_size_select" />                
+                
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_modifyaddress3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_modifyaddress2"
+                android:layout_marginTop="@dimen/space_micro"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/space_small"
+                android:paddingTop="@dimen/space_small" >
+                
+                <TextView
+                    android:id="@+id/tv_modifyaddressspecific"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_middle"
+                    android:text="具体地址"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <EditText
+                    android:id="@+id/et_modifyaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_modifyaddressspecific"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/space_middle"
+                    android:layout_marginRight="@dimen/space_middle"
+                    android:singleLine="true"
+                    android:ems="10"
+                    android:maxLength="50"
+                    android:textSize="@dimen/text_size_normal"
+                    android:hint="请正确填写具体地址" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/rl_modifyexpert"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spinner_height"
+                android:layout_below="@+id/rl_modifyaddress3"
+                android:layout_marginTop="@dimen/space_middle"
+                android:background="@color/white"
+                android:orientation="vertical" >
+                
+                <TextView
+                    android:id="@+id/tv_modifyexpert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_middle"
+                    android:text="选择服务领域"
+                    android:textSize="@dimen/text_size_normal" />
+                
+                <Spinner
+                    android:id="@+id/sp_modifyexpert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_middle"
+                    android:layout_marginRight="@dimen/space_middle"
+                    android:layout_toRightOf="@+id/tv_modifyexpert"
+                    android:entries="@array/experts"
+                    android:textSize="@dimen/text_size_normal" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    
+    <Button
+        android:id="@+id/bt_modifyengineer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/space_middle"
+        android:background="@color/green_light"
+        android:gravity="center"
+        android:text="完成修改"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_large" />
+
+</RelativeLayout>

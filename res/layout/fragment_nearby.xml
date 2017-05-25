@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_light" >
+    
+    <LinearLayout
+        android:id="@+id/ll_nearbybuttons"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_buttons_height"
+        android:orientation="horizontal"
+        android:background="@color/grey_light" >
+        
+        <Button
+            android:id="@+id/bt_showengineers"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_micro"
+            android:layout_marginRight="@dimen/space_micro"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="维修工"
+            android:background="@color/white"
+            android:textSize="@dimen/text_size_normal" /> <!-- 查看维修工 我要看基佬 ≖‿≖ -->
+        
+        <Button
+            android:id="@+id/bt_showorders"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space_micro"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="维修单"
+            android:background="@color/white"
+            android:textSize="@dimen/text_size_normal" /> <!-- 查看维修单 我要看妹纸 ◕∀◕ -->
+            
+       <Button
+            android:id="@+id/bt_showall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space_micro"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="全部"
+            android:background="@color/white"
+            android:textSize="@dimen/text_size_normal" /> <!-- 查看维修单 我要看妹纸 ◕∀◕ -->
+            
+        <Button
+            android:id="@+id/bt_refresh"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space_micro"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="刷新"
+            android:background="@color/white"
+            android:textSize="@dimen/text_size_normal" /> <!-- 查看维修单 我要看妹纸 ◕∀◕ -->
+        
+        <Button
+            android:id="@+id/bt_nearbyclear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space_micro"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="清除"
+            android:background="@color/white"
+            android:textSize="@dimen/text_size_normal" /> <!-- 清除 不看了 ╮(╯▽╰)╭ -->
+    </LinearLayout>
+    
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_nearbybuttons"
+        android:layout_above="@+id/ll_informations"
+        android:clickable="true" />
+    
+    <RelativeLayout
+        android:id="@+id/ll_informations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/space_middle"
+        android:paddingTop="@dimen/space_middle"
+        android:background="@color/white" >
+        
+        <View 
+            android:id="@+id/nearbystrut"
+            android:layout_width="0dp"
+            android:layout_height="0dp" 
+            android:layout_centerHorizontal="true"/>
+        
+        <ImageView
+            android:id="@+id/iv_engineermark"
+            android:layout_width="16dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/space_middle"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_marke" />
+        
+        <TextView
+            android:id="@+id/tv_engineernum1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_engineermark"
+            android:layout_marginLeft="@dimen/space_small"
+            android:layout_centerVertical="true"
+            android:text="附近维修工数："
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/black" /> <!-- 附近维修工数：附近的基佬：  -->
+        
+        <TextView
+            android:id="@+id/tv_engineernum2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_engineernum1"
+            android:layout_marginLeft="@dimen/space_small"
+            android:layout_centerVertical="true"
+            android:text="0"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/blue_light" />
+        
+        <ImageView
+            android:id="@+id/iv_ordermark"
+            android:layout_width="16dp"
+            android:layout_height="24dp"
+            android:layout_alignLeft="@id/nearbystrut"
+            android:layout_marginLeft="@dimen/space_middle"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_marko" />
+
+        <TextView
+            android:id="@+id/tv_ordernum1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_ordermark"
+            android:layout_marginLeft="@dimen/space_small"
+            android:layout_centerVertical="true"
+            android:text="附近维修单数："
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/black" /> <!-- 附近维修单数： 附近的妹纸：  -->
+        
+        <TextView
+            android:id="@+id/tv_ordernum2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_ordernum1"
+            android:layout_marginLeft="@dimen/space_small"
+            android:layout_centerVertical="true"
+            android:text="0"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/blue_light" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

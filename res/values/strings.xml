@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">修修生活</string>
+    <!-- 修修生活  勾搭生活 (´・ω・`) -->
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">登录修修生活</string>
+    <string name="title_activity_register">欢迎来到修修生活</string>
+    <string name="title_activity_sendorders">发活儿</string>
+    <string name="title_activity_orderlist">活儿列表</string>
+    <string name="title_activity_engineerlist">维修工列表</string>
+    <string name="title_activity_verifyidentity">身份验证</string>
+    <string name="title_activity_myorders">发过的活儿</string>
+    <string name="title_activity_order">活儿信息</string>
+    <string name="title_activity_engineer">维修工详情</string>
+    <string name="title_activity_welcome">欢迎</string>
+    <string name="title_activity_personalcenter">个人中心</string>
+    <string name="title_activity_personalinfomation">个人资料</string>
+    <string name="title_activity_engineerinfomation">维修工资料</string>
+    <string name="title_activity_applyengineer">填写维修工基本信息</string>
+    <string name="title_activity_myreceivedorders">接到的活儿</string>
+    <string name="title_activity_rate_engineer">请为维修工评分</string>
+    <string name="title_activity_route">接活儿路线</string>
+    <!-- 接活儿路线 帮您设计勾搭路线...  _(:3 」∠)_ -->
+
+    <string name="title_activity_modify_engineer">修改维修工基本信息</string>
+    <string name="title_activity_message">MessageActivity</string>
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_year">年</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_seconds">秒</string>
+    <string name="title_activity_modify_password">修改密码</string>
+
+</resources>

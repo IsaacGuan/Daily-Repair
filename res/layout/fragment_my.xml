@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_light"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/space_middle"
+                android:paddingTop="@dimen/space_middle" >
+
+                <ImageView
+                    android:id="@+id/iv_head"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/default_head" />
+
+                <TextView
+                    android:id="@+id/tv_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/space_middle"
+                    android:text="登陆/注册"
+                    android:textSize="@dimen/text_size_large" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_personalcenter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_large"
+                android:background="@color/white"
+                android:padding="@dimen/space_middle" >
+
+                <ImageView
+                    android:id="@+id/iv_personalcenter"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_small"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/person"
+                    android:tint="@color/text_default" />
+
+                <TextView
+                    android:id="@+id/tv_personalcenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_middle"
+                    android:layout_toRightOf="@+id/iv_personalcenter"
+                    android:text="个人中心"
+                    android:textSize="@dimen/text_size_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_mysendedorders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_micro"
+                android:background="@color/white"
+                android:padding="@dimen/space_middle" >
+
+                <ImageView
+                    android:id="@+id/iv_myorders"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_small"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/message"
+                    android:tint="@color/text_default" />
+
+                <TextView
+                    android:id="@+id/tv_myorders"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_middle"
+                    android:layout_toRightOf="@+id/iv_myorders"
+                    android:text="发过的活儿"
+                    android:textSize="@dimen/text_size_normal" />
+                
+                <RelativeLayout
+                    android:id="@+id/rl_sendedbadge"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true" >
+                    
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_engineer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_micro"
+                android:background="@color/white"
+                android:padding="@dimen/space_middle" >
+                
+                <ImageView
+                    android:id="@+id/iv_engineer"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_small"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/tools"
+                    android:tint="@color/text_default" />
+
+                <TextView
+                    android:id="@+id/tv_engineer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_middle"
+                    android:layout_toRightOf="@+id/iv_engineer"
+                    android:text="申请维修工"
+                    android:textSize="@dimen/text_size_normal" />
+                
+                <RelativeLayout
+                    android:id="@+id/rl_receivedbadge"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true" >
+                    
+                </RelativeLayout>
+                
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

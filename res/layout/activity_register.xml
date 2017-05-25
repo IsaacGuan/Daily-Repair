@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <TextView
+        android:id="@+id/tv_logintitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_registername"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/space_large"
+        android:text="注册"
+        android:textSize="@dimen/text_size_large" />
+
+    <TextView
+        android:id="@+id/tv_tologin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_logintitle"
+        android:layout_alignRight="@+id/et_registername"
+        android:layout_marginRight="@dimen/space_middle"
+        android:text="有账号?去登录  >"
+        android:textColor="@color/blue_light"
+        android:textSize="@dimen/text_size_normal" />
+    
+    <EditText
+        android:id="@+id/et_registermobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_logintitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/space_large"
+        android:layout_marginLeft="@dimen/space_middle"
+        android:layout_marginRight="@dimen/space_middle"
+        android:singleLine="true"
+        android:hint="请输入手机号"
+        android:maxLength="15"
+        android:inputType="phone"
+        android:textSize="@dimen/text_size_normal"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+    
+    <EditText
+        android:id="@+id/et_registerpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/space_middle"
+        android:layout_marginRight="@dimen/space_middle"
+        android:layout_below="@+id/et_registermobile"
+        android:singleLine="true"
+        android:ems="10"
+        android:hint="密码不少于6位"
+        android:maxLength="15"
+        android:textSize="@dimen/text_size_normal"
+        android:inputType="textPassword" />
+    
+    <EditText
+        android:id="@+id/et_registerpassword2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/space_middle"
+        android:layout_marginRight="@dimen/space_middle"
+        android:layout_below="@+id/et_registerpassword"
+        android:singleLine="true"
+        android:ems="10"
+        android:hint="请再次输入密码"
+        android:maxLength="15"
+        android:textSize="@dimen/text_size_normal"
+        android:inputType="textPassword" />
+    
+    <EditText
+        android:id="@+id/et_registername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/space_middle"
+        android:layout_marginRight="@dimen/space_middle"
+        android:layout_below="@+id/et_registerpassword2"
+        android:singleLine="true"
+        android:ems="10"
+        android:hint="请输入姓名"
+        android:maxLength="20"
+        android:textSize="@dimen/text_size_normal" />
+    
+    <CheckBox
+        android:id="@+id/cb_agree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_registername"
+        android:layout_below="@+id/et_registername"
+        android:layout_marginTop="@dimen/space_middle"
+        android:text="您已阅读并同意"
+        android:textSize="@dimen/text_size_normal" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cb_agree"
+        android:layout_alignBottom="@+id/cb_agree"
+        android:layout_toRightOf="@+id/cb_agree"
+        android:text="《修修生活协议》"
+        android:textSize="@dimen/text_size_normal" />
+    
+    <Button
+        android:id="@+id/bt_register"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/space_middle"
+        android:background="@color/green_light"
+        android:gravity="center"
+        android:text="注册"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_large" />
+    
+</RelativeLayout>

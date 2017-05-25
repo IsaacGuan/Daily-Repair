@@ -1,0 +1,164 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gyr.repair.activities.MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- 顶部 -->
+        
+        <!-- 底部tab -->
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_tab"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_tap_height"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" 
+            android:baselineAligned="true">
+        
+            <RelativeLayout
+                android:id="@+id/rl_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/space_micro"
+                android:paddingBottom="@dimen/space_micro"
+                android:layout_weight="1.0" >
+                
+                <RelativeLayout
+                    android:id="@+id/rl_tab_home"
+                    android:layout_width="@dimen/bottom_tap_height"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true" >
+                    
+                    <ImageView
+                        android:id="@+id/iv_home"
+                        android:layout_width="@dimen/bottomtab_icon_size"
+                        android:layout_height="@dimen/bottomtab_icon_size"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
+                        android:src="@drawable/home"
+                        android:tint="@color/grey" />
+
+                    <TextView
+                        android:id="@+id/tv_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="4dp"
+                        android:text="首页"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/text_size_small" />
+                    
+                </RelativeLayout>
+                
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_nearby"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/space_micro"
+                android:paddingBottom="@dimen/space_micro"
+                android:layout_weight="1.0" >
+                
+                <RelativeLayout
+                    android:id="@+id/rl_tab_nearby"
+                    android:layout_width="@dimen/bottom_tap_height"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true" >
+                    
+                    <ImageView
+                        android:id="@+id/iv_nearby"
+                        android:layout_width="@dimen/bottomtab_icon_size"
+                        android:layout_height="@dimen/bottomtab_icon_size"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
+                        android:src="@drawable/nearby"
+                        android:tint="@color/grey" />
+
+                    <TextView
+                        android:id="@+id/tv_nearby"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="4dp"
+                        android:text="附近"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/text_size_small" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_my"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/space_micro"
+                android:paddingBottom="@dimen/space_micro"
+                android:layout_weight="1.0" >
+                
+                <RelativeLayout
+                    android:id="@+id/rl_tab_my"
+                    android:layout_width="@dimen/bottom_tap_height"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true" >
+                    
+                    <ImageView
+                        android:id="@+id/iv_my"
+                        android:layout_width="@dimen/bottomtab_icon_size"
+                        android:layout_height="@dimen/bottomtab_icon_size"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
+                        android:src="@drawable/my"
+                        android:tint="@color/grey" />
+
+                    <TextView
+                        android:id="@+id/tv_my"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="4dp"
+                        android:text="我的"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/text_size_small" />
+                
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        
+        <!-- 内容部分， fragment切换 -->
+
+        <LinearLayout
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/line"
+            android:layout_below="@+id/kanner_ad"
+            android:background="@color/grey_light"
+            android:orientation="vertical" >
+            
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_micro"
+            android:layout_above="@id/ll_bottom_tab"
+            android:background="@color/grey" />
+        
+    </RelativeLayout>
+
+</FrameLayout>

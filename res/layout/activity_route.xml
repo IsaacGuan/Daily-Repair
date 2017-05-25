@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_light"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <LinearLayout
+        android:id="@+id/ll_routebuttons"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_buttons_height"
+        android:orientation="horizontal"
+        android:background="@color/grey_light" >
+        
+        <Button
+            android:id="@+id/bt_walk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_micro"
+            android:layout_marginRight="@dimen/space_micro"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="步行"
+            android:background="@color/white"
+            android:textSize="@dimen/text_size_normal" /> <!-- 步行  走路 ╯3╰ -->
+        
+        <Button
+            android:id="@+id/bt_drive"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space_micro"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="驾车"
+            android:background="@color/white"
+            android:textSize="@dimen/text_size_normal" /> <!-- 驾车 开车 ∩ˍ∩ -->
+        
+        <Button
+            android:id="@+id/bt_transit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space_micro"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="公交"
+            android:background="@color/white"
+            android:textSize="@dimen/text_size_normal" /> <!-- 公交 挤公交 ˋˍˊ -->
+        
+        <Button
+            android:id="@+id/bt_routeclear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space_micro"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="清除"
+            android:background="@color/white"
+            android:textSize="@dimen/text_size_normal" /> <!-- 清除 不去了 ﾟДﾟ -->
+        
+    </LinearLayout>
+    
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView_route"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_routebuttons"
+        android:clickable="true" />
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginBottom="@dimen/space_middle" >
+
+        <Button
+            android:id="@+id/pre"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/space_tiny"
+            android:layout_marginRight="@dimen/space_tiny"
+            android:layout_weight="1.0"
+            android:background="@drawable/pre_"
+            android:onClick="nodeClick" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/space_tiny"
+            android:layout_marginRight="@dimen/space_tiny"
+            android:layout_weight="1.0"
+            android:background="@drawable/next_"
+            android:onClick="nodeClick" />
+    </LinearLayout>
+
+</RelativeLayout>
